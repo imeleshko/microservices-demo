@@ -9,6 +9,9 @@ metadata:
     prometheus.io/path: "/prometheus"
   namespace: sock-shop
 spec:
+  selector:
+    matchLabels:
+      name: queue-master
   ports:
     # the port that this service should serve on
   - port: 80
